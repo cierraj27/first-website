@@ -1,0 +1,187 @@
+body {
+    background-color: white;
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+html, body {
+  font-family: monospace;
+  margin: 0;
+  padding: 0;
+}
+
+/* default styling for ul */
+.menubar {
+  padding: 20px;
+  text-align: left;
+  background-color: rgb(160, 142, 202);
+}
+
+/* default styling for all li elements */
+.menuitem {
+  display: inline-block;
+  background: #404857;
+  width: 100px;
+  padding: 0.7rem;
+  cursor: pointer;
+  position: relative;
+  border-radius: 4px;
+  text-align: center;
+}
+
+/* default styling for all a elements */
+.menulink {
+  color: white;
+  text-decoration: none;
+}
+
+/* changing the background color of top-level li elements green upon hover */
+.menuitem:hover {
+  background: black;
+}
+
+/* changing the text color of a top-level menubar a element when the li element containing it is hovered over */
+.menuitem:hover .menulink {
+  color: white;
+}
+
+/* default appearance of dropdown menu, which has display: none until hover/focus */
+.dropdown {
+  display: none;
+  padding: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+/* hovering over a top-level menubar's li element switches its dropdown menu's visibility value from hidden to visible (you can also do this with display: block; instead of visibility: visible;) */
+.menuitem:hover .dropdown, .menuitem:focus .dropdown {
+  display: block;
+}
+
+/* default styling of dropdown menu li elements */
+.dropdown-item {
+  background-color: black;
+  display: block;
+  margin-top: 1px;
+}
+
+/* changing the background color of dropdown menu li items upon hover */
+.dropdown-item:hover {
+  background: #1c4693;
+}
+
+/* changing the text color of an a element in the dropdown menu when the li containing it is hovered over */
+.dropdown-item:hover .menulink {
+  color: rgb(255, 0, 0);
+}
+
+
+
+
+
+
+
+
+
+/*
+a {
+  text-decoration: none;
+}
+
+nav {
+  background-color: #8bbeb2;
+  font-family: 'Exo', sans-serif;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+li {
+  color: #fff;
+  background: #384e77;
+  float: left;
+  padding: 1rem;
+  text-decoration: none;
+  margin: 2px;
+  min-width: 60px;
+  text-align: center;
+  border-radius: 3px;
+  position: relative;
+}
+
+li a {
+  color: #fff;
+}
+
+/* try adding li:focus-within */
+/*
+li:hover, 
+li:focus,
+li:focus-within {
+  background: #0d0630;
+  cursor: pointer;
+}
+
+li:focus-within a {
+outline: none;
+}   
+
+ul li ul {
+  visibility: hidden;
+  opacity: 0;
+  min-width: 5rem;
+  position: absolute;
+  margin-top: 1rem;
+  right: -2px;
+  display: none;
+}
+
+ul li:hover > ul,
+ul li:focus-within > ul,
+ul li ul:hover,
+ul li ul:focus {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+ul li ul li {
+  clear: both;
+  width: 100%;
+}
+
+
+/*
+nav {
+    background-color: darkgrey;
+    text-align: right;
+    padding: 5px;
+}
+
+.nav ul {
+    list-style-type: none;
+    display: inline-block;
+    text-align: right;
+    color: rgb(255, 255, 255);
+}
+
+.nav li {
+    display: inline-block;
+}
+
+nav a {
+    color: white;
+    padding: 10px;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+*/
+
